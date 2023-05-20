@@ -1,0 +1,28 @@
+Gym pass
+
+RFs (Requisitos funcionais)
+
+[] Deve ser possível se cadastrar; [x]
+[] Deve ser possível se autenticar;
+[] Deve ser possível obter o perfil de um usuario logado;
+[] Deve ser possível o usuario ter um historico de check ins
+[] Deve ser possível buscar academias proximas 
+[] Deve ser possível buscar uma academias pelo nome; [x] 
+[] Deve ser possível o usuario realizar check in em uma academia;
+[] Deve ser possível cadastrar uma academia; [x]
+
+RNs (Regras de Negocio)
+
+[] Usuario nao pode se cadastrar com um email duplicado;
+[] O usuario não pode fazer 2 check-ins no mesmo dia;
+[] O usuario não pode fazer check-in se não estiver perto (100) da academia;
+[] O check-in só pode ser validado até 20 min apos criado;
+[] O check-in só pode ser validado por admins; [x]
+[] A academia só pode ser cadastrada por admins; [x]
+
+RNFs (Requisitos não funcionais)
+
+[] A senha do usuario precisa estar criptografada; [x]
+[] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL; [x]
+[] Todas listas de dados precisam estar paginadas com 20 itens por pagina;
+[] O usuario deve ser identificado por um JWT (JSON Web Token); [x]
